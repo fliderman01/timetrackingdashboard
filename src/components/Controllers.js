@@ -22,4 +22,3 @@ export default function Controllers({ setValue }) {
     </div>
   );
 }
-// use sprites to crop Jeremy's picture

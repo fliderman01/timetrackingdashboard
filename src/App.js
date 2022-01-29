@@ -6,7 +6,7 @@ import './style.css';
 
 export default function App(props) {
   const board = data.cards;
-  const [cards, setCards] = useState(board);
+  const [cards] = useState(board);
   const [value, setValue] = useState('weekly');
   return (
     <div>
