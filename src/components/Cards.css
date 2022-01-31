@@ -1,0 +1,20 @@
+.hours {
+  font-size: 31px;
+  font-weight: 300;
+}
+section {
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 16px;
+}
+.innerSection {
+  border-radius: 20px;
+  background-color: hsl(235, 46%, 20%);
+}
+.innerSection:hover {
+  background-color: hsl(246, 80%, 60%);
+}
+/* check the .innerSection hover color */
+h4 {
+  font-weight: 400;
+}

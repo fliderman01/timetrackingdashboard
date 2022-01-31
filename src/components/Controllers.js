@@ -4,21 +4,24 @@ import './Controllers.css';
 
 export default function Controllers({ setValue }) {
   return (
-    <div>
-      <nav>
+    <nav>
+      <div className="profile">
         <img
           src="https://raw.githubusercontent.com/fliderman01/17---time-tracking-dashboard-main/main/images/image-jeremy.png"
           alt="Jeremy smiling"
-          width="100px"
+          width="80px"
+          className="jeremyPic"
         />
-        <span>Report for</span>
-        <p>Jeremy Robson</p>
-        <ul>
-          <li onClick={() => setValue('daily')}>Daily</li>
-          <li onClick={() => setValue('weekly')}>Weekly</li>
-          <li onClick={() => setValue('monthly')}>Monthly</li>
-        </ul>
-      </nav>
-    </div>
+        <div className="report">
+          <span>Report for</span>
+          <h3>Jeremy Robson</h3>
+        </div>
+      </div>
+      <ul>
+        <li onClick={() => setValue('daily')}>Daily</li>
+        <li onClick={() => setValue('weekly')}>Weekly</li>
+        <li onClick={() => setValue('monthly')}>Monthly</li>
+      </ul>
+    </nav>
   );
 }

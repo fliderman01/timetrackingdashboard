@@ -4,12 +4,14 @@ import './Cards.css';
 
 export default function Cards({ index, cards, value }) {
   return (
-    <div>
-      <section style={{ backgroundColor: cards[index].color }}>
-        <div
-          className="innerSection"
-          style={{ backgroundImage: 'url(' + cards[index].pic + ')' }}
-        >
+    <main>
+      <section
+        style={{
+          backgroundColor: cards[index].color,
+          backgroundImage: 'url(' + cards[index].pic + ')',
+        }}
+      >
+        <div className="innerSection">
           <div className="up">
             <h4>{cards[index].title}</h4>
             <img
@@ -18,13 +20,13 @@ export default function Cards({ index, cards, value }) {
             />
           </div>
           <div className="bottom">
-            <p>{cards[index].timeframes[value].current}hrs</p>
+            <p className="hours">{cards[index].timeframes[value].current}hrs</p>
             <span>
               last week - {cards[index].timeframes[value].previous}hrs
             </span>
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
