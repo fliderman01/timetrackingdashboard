@@ -17,7 +17,13 @@ span {
   color: hsl(236, 100%, 87%);
 }
 @media screen and (min-width: 768px) {
+  body {
+    padding: 11% 7%;
+  }
   .container {
-    display: flex;
+    width: 1200px;
+    height: 200px;
+    display: grid;
+    grid-template-areas: 'navv mainn';
   }
 }
