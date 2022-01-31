@@ -6,10 +6,14 @@ section {
   cursor: pointer;
   border-radius: 20px;
   margin: 16px;
+  padding-top:36px;
+  background-repeat: no-repeat;
+  background-position: 255px -11px;
 }
 .innerSection {
   border-radius: 20px;
   background-color: hsl(235, 46%, 20%);
+  padding: 30px 25px;
 }
 .innerSection:hover {
   background-color: hsl(246, 80%, 60%);
@@ -17,4 +21,15 @@ section {
 /* check the .innerSection hover color */
 h4 {
   font-weight: 400;
+}
+.up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
