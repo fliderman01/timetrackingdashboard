@@ -6,7 +6,7 @@ section {
   cursor: pointer;
   border-radius: 20px;
   margin: 16px;
-  padding-top:36px;
+  padding-top: 36px;
   background-repeat: no-repeat;
   background-position: 255px -11px;
 }
@@ -19,6 +19,7 @@ section {
   background-color: hsl(246, 80%, 60%);
 }
 /* check the .innerSection hover color */
+/* do hover animations on monitor (mobile doesn't need) */
 h4 {
   font-weight: 400;
 }
