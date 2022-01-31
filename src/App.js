@@ -9,7 +9,7 @@ export default function App(props) {
   const [cards] = useState(board);
   const [value, setValue] = useState('weekly');
   return (
-    <div>
+    <div className="container">
       <Controllers setValue={setValue} />
       {cards.map((i, index) => (
         <Cards key={index} index={index} cards={cards} value={value} />
