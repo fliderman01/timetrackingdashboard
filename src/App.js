@@ -11,9 +11,11 @@ export default function App(props) {
   return (
     <div className="container">
       <Controllers setValue={setValue} />
+      <main>
       {cards.map((i, index) => (
         <Cards key={index} index={index} cards={cards} value={value} />
       ))}
+      </main>
     </div>
   );
 }
